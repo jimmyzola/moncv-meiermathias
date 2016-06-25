@@ -1,6 +1,6 @@
 $(document).ready(function(){
   'use strict';
-  $('a').smoothScroll({speed:3000});
+  $('a').smoothScroll({offset: -50, speed: 400});
 });
 
 // Elevator script included on the page, already.
@@ -22,7 +22,7 @@ $('div.progress').each(function(i, obj){
 var myChart = new Chart(replaceProgessDonut, {
       type: 'doughnut',
       data: {
-          labels: [label+value+'%'],
+          labels: [label+' '+value+'%'],
           datasets: [{
               data: [value, 100-value],
               backgroundColor: [
