@@ -89,9 +89,14 @@ body {
 }
 
 .blue{
-  background-color : #cbe6f1;
+  background-color : #8a9196;
 }
 
 .brown{
-  background-color : #ebc4b5;
+  background-color : #7a8288;
+}
+
+.row{
+  padding-top:35px;
+  padding-bottom:35px;
 }
