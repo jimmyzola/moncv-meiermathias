@@ -96,6 +96,7 @@ body {
   background-color : #7a8288;
 }
 
+/* Change the padding of all div row */
 .row{
   padding-top:35px;
   padding-bottom:35px;

@@ -1,9 +1,11 @@
+// Function used to modificate speed of smoothScrool and the offset (for good mobile display)
 $(document).ready(function(){
   'use strict';
-  $('a').smoothScroll({offset: -50, speed: 400});
+  $('a').smoothScroll({offset: -10, speed: 400});
 });
 
-// Elevator script included on the page, already.
+
+// Elevator script execute on 'Mathias Meier' in the nav bar
 window.onload = function() {
   var elevator = new Elevator({
     element: document.querySelector('.elevator-button'),
@@ -13,6 +15,7 @@ window.onload = function() {
   });
 }
 
+// Function who replaces the progressBar with doughnut
 $('div.progress').each(function(i, obj){
   var label = $(obj).find('div').text();
   var value = $(obj).find('div').attr('aria-valuenow');
@@ -43,10 +46,7 @@ var myChart = new Chart(replaceProgessDonut, {
           }]
       },
   options: {
-    tooltips:{enabled:false} // désactivation du tooltips pour éviter de remarquer la zone trensparante
+    tooltips:{enabled:false} // Option to enabled tooltip function
   }
   });
-
 });
-
-
